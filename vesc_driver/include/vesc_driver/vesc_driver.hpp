@@ -105,6 +105,9 @@ private:
   rclcpp::SubscriptionBase::SharedPtr servo_sub_;
   rclcpp::TimerBase::SharedPtr timer_;
 
+  // ROS parameters
+  std::string imu_frame_;
+
   // driver modes (possible states)
   typedef enum
   {
